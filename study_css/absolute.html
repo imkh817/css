@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    .abs {
+      position: absolute;
+      top : 0;
+      left : 10px;
+    }
+    .parent {
+      border: 2px solid blue;
+      color: blue;
+      background: lightskyblue;
+      padding: 1rem;
+    }
+
+    .child {
+      border: 2px dotted red;
+      color: red;
+      background: lightpink;
+      padding: 1rem;
+    }
+
+    /* Alignment styles */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    body, html {
+      height: 100%;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<div class="parent" style="position: relative">
+  Parent
+  <div class="child">
+    Child #1
+  </div>
+  <div class="child abs">
+    Child #2
+  </div>
+</div>
+</html>

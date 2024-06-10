@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    #parent, #other{
+      border: 5px solid tomato;
+    }
+    #me{
+      background: black;
+      color: white;
+      position: absolute;
+      /*relactive는 현재 태그가 있어야하는 위치 기준
+        absolute는 html태그 기준
+        정확히 말하자면 html태그 기준이라기 보다는 static이 아닌
+        부모가 나타날때까지 무시하다가 static이 아닌 부모가 나타나면
+        그 값을 기준으로 오프셋값을 지정한다.
+      */
+      left: 0;
+      top: 0;
+      /*만약 left와 top을 0으로 설정안하고 그냥 지운다면
+      position:relactive 한 값과 동일해진다
+      이유는?
+      postion:absolute를 하고 값을 지정하지 않으면
+      기본 값을 relactive의 값을 기준으로 설정이 된다!*/
+
+      /* 현재 #me 태그에 position : absoulte로 변경해주었느데 absolute가 되면
+      부모태그를 상속받던 링크가 끊기게 되어 크기가 작아진다.
+      크기를 키우고싶으면 width,height속성을 따로 주어야한다.
+      */
+    }
+  </style>
+</head>
+<body>
+<div id="other">other</div>
+<div id="parent">
+  parent
+  <div id="me">me</div>
+</div>
+</body>
+</html>

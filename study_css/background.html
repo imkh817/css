@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    .box1{
+
+      position: relative;
+      width: 800px;
+      height: 600px;
+    }
+    .box1::before{
+      background-image: url("dog.jpeg");
+      position: absolute;
+      opacity: 0.5;
+      background-size: cover;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+  </style>
+</head>
+<body>
+
+<div class="box1">
+<h1>배경</h1>
+</div>
+</body>
+</html>

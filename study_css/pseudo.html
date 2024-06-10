@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+
+    /*active가 위에있고 hover가 밑에 작성할때 마우스를 갖다되면 hover는 되지만
+      그상태로 마우스를 누르고 있으면 activce 효과가 나타나지 않는다
+      왜? active이자 hover상태일때 css는 뒤쪽에 있는 걸 선택하기 때문*/
+    a:active{ /*활성화 시*/
+      color: #b3d4fc;
+    }
+
+    a:hover{ /*호버*/
+      color : salmon;
+    }
+
+
+    a:link{ /*링크가 걸려있는 페이지*/
+      color: green;
+    }
+
+    a:visited{/*방문한 페이지*/
+      color: aqua;
+    }
+
+    a:focus{/*tab을 눌렀을 시 */
+      color : antiquewhite;
+    }
+
+  </style>
+</head>
+<body>
+<a href="http://www.naver.com">방문함</a>
+<a href="http://fakeSite.com">방문함</a>
+</body>
+</html>

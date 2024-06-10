@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <!--
+  하나의 태그에 여러 구분자를 주어 색상을 변경했다.
+  이떄 css는 우선순위를 파악하게 되는데 우선순위로는
+  inline형식 > id > class > 태그 순으로 지정된다.
+  -->
+  <style>
+    #id1{
+      color: antiquewhite;
+    }
+    .class1{
+      color: blueviolet;
+    }
+    li{
+      color: red;
+    }
+  </style>
+</head>
+<body>
+<ul>
+  <li>Htmnl</li>
+  <li>Css</li>
+  <li id="id1" class="class1" style="color: aqua">Javascript</li>
+</ul>
+</body>
+</html>
